@@ -37,7 +37,7 @@ const App = () => {
       Situação: <span style={{color: dados.ativa ? 'green' : 'red'}}>{dados.ativa ? "Ativa" : "Inativa" }</span>
     </p>
     <p>Total: R$ {total}</p>
-    <p>{total > 10000 && <p>{dados.cliente}, você está gastando muito! Suas compras ultrapassaram 10.000'</p>}</p>
+    {total > 10000 && <p>{dados.cliente}, você está gastando muito! Suas compras ultrapassaram 10.000 R$'</p>}
   </div>;
 };
 
